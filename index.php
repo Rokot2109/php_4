@@ -41,6 +41,12 @@ $images = get_gallery(BIG_IMG);
 <a rel="gallery" class="photo" href="gallery_img/big/<?= $filename ?>"><img src="gallery_img/small/<?= $filename ?>" width="150" height="100" /></a>
 <?php endforeach;?>
 </div>
+<h3>Загрузить изображение:</h3>
+<form method="post" enctype="multipart/form-data">
+		<input type="file" name="image">
+		<input type="submit" value="Загрузить" name="Load" >
+
+</form>
 </div>
 
 </body>
